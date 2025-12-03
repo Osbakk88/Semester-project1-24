@@ -1,273 +1,329 @@
+.page-header {
+  text-align: center;
+  padding: 3rem 2rem 2rem;
+  margin-bottom: 4rem;
+}
+
+.page-header h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.header-subtitle {
+  font-size: 1.2rem;
+  color: #ddd;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .exhibitions-content h1 {
-  margin-top: 10%;
+  margin-top: 2rem;
   margin-bottom: 5rem;
-  font-size: 36;
+  font-size: 4rem;
+  text-align: center;
+  color: #1a1a1a;
+  font-weight: 800;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.exhibitions-content h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 5px;
+  background: linear-gradient(90deg, #45a049, #2ecc71);
+  border-radius: 3px;
 }
 
 .exhibitions-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 6rem;
+  padding: 2rem 8rem;
 }
 
-.frame1 {
+.exhibitions-section section {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Modern card with image overlay */
+.frame1,
+.frame2,
+.frame3,
+.frame4,
+.frame5 {
   position: relative;
-  width: var(--max-width-content);
-  height: 500px;
-  background-color: #ffffff;
-  margin-top: 110px;
-  border: 2px black solid;
+  width: 100%;
+  min-height: 450px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  margin: 0;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.4s ease;
+  padding: 3rem;
+}
+
+.frame1:hover,
+.frame2:hover,
+.frame3:hover,
+.frame4:hover,
+.frame5:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling with modern overlapping effect */
+.img1 {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  right: -20px;
+  top: -20px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.frame1:hover .img1 {
+  transform: scale(1.05) translateY(-5px);
 }
 
 .frame1 .cosmology-explore {
-  position: absolute;
-  font-family: var(--font-family);
-  color: #000000;
-  font-size: 24px;
-  line-height: 40px;
-  word-wrap: break-word;
-  left: 90px;
-  right: 30px;
-}
-
-.frame1 .caption {
-  font-family: var(--font-family);
-  font-size: 30px;
-  font-weight: 400;
-}
-
-.frame1 .span {
-  font-family: var(--font-family);
-  line-height: 24px;
-  width: 80%;
-}
-
-.img1 {
   position: relative;
-  width: var(--max-width-content);
-  height: 160px;
-  left: 0;
-  object-fit: cover;
-  border: 2px black solid;
+  max-width: 55%;
+  padding: 2rem 0;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.9;
 }
 
-.imgSkeleton {
-  position: relative;
-  width: 300px;
-  height: auto;
-  top: 50px;
-  left: 80px;
-  object-fit: cover;
+h2 {
+  font-size: 2.5rem !important;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
-.img2 {
-  position: relative;
-  width: 100%;
-  height: 262px;
-  top: 262px;
-  left: 0;
-  object-fit: cover;
-}
-
-.img3 {
-  position: relative;
-  width: 300px;
-  height: auto;
-  top: 30px;
-  left: 0;
-  object-fit: cover;
-}
-
-.imgAnt {
-  position: relative;
-  width: 300px;
-  height: auto;
-  top: 65%;
-  left: 50%;
-  object-fit: cover;
-}
-
+/* Frame 2 - Evolution with grid layout */
 .frame2 {
-  position: relative;
-  width: var(--max-width-content);
-  height: 700px;
-  background-color: #ffffff;
-  margin-top: 110px;
-  border: 2px black solid;
+  min-height: 500px;
 }
 
 .frame2 .flexcontainer {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: flex-start;
-  margin-top: 60px;
-  margin-left: 60px;
-  width: 80%;
-}
-.frame2 .caption {
-  font-family: var(--font-family);
-  font-size: 30px;
-  font-weight: 400;
-}
-.frame2 .span {
-  font-family: var(--font-family);
-  font-size: 24px;
-}
-.frame2 .caption-2 {
-  font-family: var(--font-family);
-  font-size: 24px;
-  line-height: 40px;
-}
-.frame2 .rectangle {
-  position: absolute;
-  width: 410px;
-  height: 348px;
-  top: 269px;
-  left: 782px;
-  object-fit: cover;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  padding: 1rem 0;
 }
 
-.frame3 {
+.imgSkeleton {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
   position: relative;
-  width: var(--max-width-content);
-  height: 740px;
-  background-color: #ffffff;
-  margin-top: 110px;
-  border: 2px black solid;
+  top: 0;
+  left: 0;
+}
+
+.frame2:hover .imgSkeleton {
+  transform: rotate(2deg) scale(1.05);
+}
+
+/* Frame 3 - Biology with dual images */
+.frame3 {
+  min-height: 550px;
 }
 
 .frame3 .flexcontainer {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: flex-start;
-  margin-top: 60px;
-  margin-left: 60px;
-  width: 90%;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  margin: 0;
+  width: 100%;
+  padding: 1rem 0;
 }
 
-.frame3 .text {
-  position: relative;
-  align-self: stretch;
-  font-family: var(--font-family);
-  font-size: 24px;
-  color: #000000;
-}
-.frame3 .caption {
-  font-family: var(--font-family);
-  font-size: 30px;
-  font-weight: 400;
-}
-.frame3 .span {
-  font-family: var(--font-family);
-  font-size: 24px;
-}
-.frame3 .rectangle {
-  top: 494px;
-  position: absolute;
-  width: 411px;
-  height: 330px;
-  left: 781px;
-  object-fit: cover;
-}
-.frame3 .img {
-  top: 89px;
-  position: absolute;
-  width: 411px;
-  height: 330px;
-  left: 781px;
-  object-fit: cover;
-}
-
-.frame4 {
-  position: relative;
-  width: var(--max-width-content);
-  height: 500px;
-  background-color: #ffffff;
-  margin-top: 110px;
-  border: 2px black solid;
-}
-
-.frame4 .ellipse {
-  position: absolute;
-  width: 334px;
+.img3 {
+  width: 100%;
+  max-width: 350px;
   height: auto;
-  top: 120px;
-  left: 60%;
-  object-fit: cover;
-}
-
-.frame4 .robotics-and-AI-the {
-  position: absolute;
-  width: 45%;
-  top: 80px;
-  left: 75px;
-  font-family: var(--font-family);
-  color: #000000;
-  font-size: 24px;
-  letter-spacing: 0;
-}
-
-.frame4 .caption {
-  font-family: var(--font-family);
-  font-size: 30px;
-  font-weight: 400;
-}
-
-.frame4 .span {
-  font-family: var(--font-family);
-  font-size: 24px;
-}
-
-.frame5 {
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1.5rem;
+  transition: transform 0.4s ease;
   position: relative;
-  width: var(--max-width-content);
-  height: 900px;
-  background-color: #ffffff;
-  margin-top: 110px;
-  border: 2px black solid;
-}
-
-.frame5 .ecology {
-  position: absolute;
-  width: 70%;
-  top: 66px;
-  left: 64px;
-  font-family: var(--font-family);
-  font-weight: 400;
-  color: #000000;
-  font-size: 24px;
-}
-
-.frame5 .caption {
-  font-family: var(--font-family);
-  font-size: 30px;
-  font-weight: 400;
-}
-
-.frame5 .span {
-  font-size: 24px;
-  line-height: 40px;
-}
-
-.frame5 .text-wrapper {
-  font-family: var(--font-family);
-  font-size: 30px;
-  font-weight: 400;
-}
-
-.frame5 .rectangle {
-  position: absolute;
-  width: 379px;
-  height: 239px;
-  top: 613px;
-  left: 654px;
-  object-fit: cover;
-}
-
-.frame5 .line {
-  position: absolute;
-  width: 1232px;
-  height: 3px;
-  top: 909px;
+  top: 0;
   left: 0;
+}
+
+.img3:hover {
+  transform: scale(1.05);
+}
+
+/* Frame 4 - Robotics with circular image */
+.frame4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  min-height: 400px;
+}
+
+.ellipse {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+  position: relative;
+  top: 0;
+  left: 0;
+  justify-self: end;
+}
+
+.frame4:hover .ellipse {
+  transform: rotate(5deg) scale(1.08);
+}
+
+.robotics-and-AI-the {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.9;
+}
+
+/* Frame 5 - Ecology with positioned image */
+.frame5 {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  min-height: 450px;
+  margin-bottom: 4rem;
+}
+
+.ecology {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.9;
+}
+
+.imgAnt {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+  position: relative;
+  top: 0;
+  left: 0;
+  justify-self: center;
+}
+
+.frame5:hover .imgAnt {
+  transform: scale(1.08);
+}
+
+/* Text styling */
+.frame1 p,
+.frame2 p,
+.frame3 p,
+.frame4 p,
+.frame5 p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .exhibitions-section {
+    padding: 2rem 1rem;
+    gap: 3rem;
+  }
+
+  .page-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header-subtitle {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  .frame1,
+  .frame2,
+  .frame3,
+  .frame4,
+  .frame5 {
+    padding: 2rem;
+  }
+
+  .frame2 .flexcontainer,
+  .frame3 .flexcontainer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .frame4 {
+    grid-template-columns: 1fr;
+  }
+
+  .frame5 {
+    grid-template-columns: 1fr;
+  }
+
+  .img1 {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    right: 0;
+    top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .frame1 .cosmology-explore {
+    max-width: 100%;
+  }
+
+  .imgSkeleton,
+  .img3,
+  .ellipse,
+  .imgAnt {
+    max-width: 100%;
+  }
 }

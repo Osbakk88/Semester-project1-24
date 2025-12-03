@@ -6,10 +6,12 @@ body {
   font-family: var(--font-family);
   min-height: 100vh;
   display: flex;
-  flex-direction: column;  
-  margin: 0 auto; /* Sentrerer innholdet */
-  background-color: #eccf8b; /* Bakgrunnsfarge */
-  padding: 0px; /* Luft på innsiden */
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #1a1a1a;
+  padding: 0px;
+  line-height: 1.6;
+  color: #ffffff;
 }
 
 /* Tilpasning for nettbrett */

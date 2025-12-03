@@ -3,34 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact the Community Science Museum in Oslo. Send us your questions and feedback through our contact form."
+    />
     <link rel="stylesheet" href="css/stylesheet.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <title>Community Science Museum - Contact</title>
   </head>
   <body>
-    <div class="header"></div>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
       <div class="container-header">
         <img
           class="header-logo"
           src="images/FullLogo_NoBuffer (4).jpg"
-          alt="Community Science Museum"
+          alt="Community Science Museum logo"
         />
-        <nav>
-          <a class="home-link active" href="index.html">Home</a>
-          <a class="Exhibitions" href="exhibitionspage.html">Exhibitions</a>
-          <a class="News" href="news.html">News</a>
-          <a class="Contribution" href="contributionpage.html">Contribution</a>
+        <nav aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="exhibitionspage.html">Exhibitions</a>
+          <a href="news.html">News</a>
+          <a href="contributionpage.html">Contribution</a>
         </nav>
       </div>
     </header>
-    <main>
+    <main id="main-content">
       <section>
         <div class="container">
-          <h2>Contact Us</h2>
-          <form action="#" method="post" onsubmit="return validateForm()">
-            <!-- First Name -->
-            <label for="fname">First Name</label>
+          <h1>Contact Us</h1>
+          <form action="#" method="post">
+            <label for="fname">First Name *</label>
             <input
               type="text"
               id="fname"
@@ -41,8 +44,7 @@
               title="Letters and spaces only"
             />
 
-            <!-- Last Name -->
-            <label for="lname">Last Name</label>
+            <label for="lname">Last Name *</label>
             <input
               type="text"
               id="lname"
@@ -53,8 +55,7 @@
               title="Letters and spaces only"
             />
 
-            <!-- Email -->
-            <label for="email">Email</label>
+            <label for="email">Email *</label>
             <input
               type="email"
               id="email"
@@ -63,13 +64,11 @@
               required
             />
 
-            <!-- Message -->
-            <label for="message">Message</label>
+            <label for="message">Message *</label>
             <textarea
               id="message"
               name="message"
               placeholder="Write your message here.."
-              style="height: 200px"
               required
             ></textarea>
 
@@ -79,18 +78,16 @@
       </section>
     </main>
     <footer>
-      <div class="menu">
-        <nav>
-          <a class="terms" href="terms.html">Terms and Conditions</a>
-          <a class="Privacy" href="privacy.html">Privacy Policy</a>
-          <a class="Contact" href="contact.html">Contact Form</a>
-          <a class="Contribution" href="contributionpage.html"
-            >Contribution - Get Involved</a
-          >
-        </nav>
-        <div class="copy">
-          &copy; 2024 Community Science Museum. All rights reserved
-        </div>
+      <nav class="menu" aria-label="Footer navigation">
+        <a class="terms" href="terms.html">Terms and Conditions</a>
+        <a class="Privacy" href="privacy.html">Privacy Policy</a>
+        <a class="Contact" href="contact.html">Contact Form</a>
+        <a class="Contribution" href="contributionpage.html"
+          >Contribution - Get Involved</a
+        >
+      </nav>
+      <div class="copy">
+        &copy; 2024 Community Science Museum. All rights reserved
       </div>
     </footer>
   </body>

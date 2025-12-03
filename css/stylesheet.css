@@ -4,7 +4,7 @@
 @import "nav.css";
 @import "fonts.css";
 @import "body.css";
-@import "contact.css";  
+@import "contact.css";
 @import "exhibitions.css";
 @import "contribution.css";
 @import "home.css";
@@ -54,6 +54,15 @@ nav a:hover {
   background-color: var(--accent-color);
 }
 
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+}
+
 nav .home-link {
   margin-right: auto;
 }
@@ -62,24 +71,46 @@ a {
   text-decoration: none;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 button {
   background-color: #000000;
   color: white;
-  padding: 10px 15px;
+  padding: 12px 24px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   margin-top: 10px;
   display: block;
   width: 30%;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
   background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 h2 {
   text-align: left;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
 }
 
 .label {
@@ -114,6 +145,25 @@ textarea {
   border-radius: 4px;
 }
 
+textarea {
+  min-height: 200px;
+}
+
+/* Description lists for visiting hours */
+dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
 .labelline {
   position: absolute;
   font-size: 1.6em;
@@ -122,4 +172,11 @@ textarea {
   margin: 0 20px;
   background-color: #000000;
   transition: 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

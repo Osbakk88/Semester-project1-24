@@ -1,23 +1,42 @@
+.contribute-content {
+  padding: 0 8rem;
+}
+
 .contribute-content h1 {
-    margin-bottom: 5rem;
-    margin-top: 5%;
-    font-size: 36;
+  margin-bottom: 5rem;
+  margin-top: 5%;
+  font-size: 36;
+  color: #ffffff;
+}
 
-    
+.contribute-content h2 {
+  margin-bottom: 2rem;
+  margin-top: 15%;
+  color: #ffffff;
+}
+
+.contribute-content p {
+  font-size: 1rem;
+  margin-bottom: 5rem;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .contribute-content {
+    padding: 0 1rem;
   }
-  
-  .contribute-content h2 {
+
+  .contribute-content h1 {
+    font-size: 2rem;
     margin-bottom: 2rem;
-    margin-top: 15%;
-    
   }
-  
+
+  .contribute-content h2 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+
   .contribute-content p {
-    font-size: 1rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
-
-  
-
-
- 
+}
