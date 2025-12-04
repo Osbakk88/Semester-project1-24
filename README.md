@@ -2,12 +2,6 @@
 
 ![Community Science Museum](<images/FullLogo_NoBuffer%20(4).jpg>)
 
-A website for the Community Science Museum featuring interactive exhibitions, news, and visitor information. Built with semantic HTML and modern CSS practices.
-
-# Community Science Museum - Semester Project 1
-
-![Community Science Museum](<images/FullLogo_NoBuffer%20(4).jpg>)
-
 ![06CD7923-10CA-470A-A306-1EAFB2941A43](https://github.com/user-attachments/assets/6a9b9af1-dcd1-4395-9fa8-7f10c8d2821a)
 
 ## Description
@@ -51,8 +45,44 @@ A lot of improvements were done to this page as I originally was not satisfied w
 
 ## Built With
 
-- [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- **HTML** - For the page structure and content
+- **CSS** - For styling (used Flexbox and Grid to make it responsive)
+- **Google Fonts** - For the typography (Klee One, Quattrocento Sans, Fira Sans, Halant)
+- **Git & GitHub** - To save my work and keep track of changes
+
+## File Structure
+
+```
+Semester-project1-24/
+│
+├── index.html
+├── exhibitionspage.html
+├── news.html
+├── contact.html
+├── contributionpage.html
+├── privacy.html
+├── terms.html
+│
+├── css/
+│   ├── stylesheet.css
+│   ├── variables.css
+│   ├── body.css
+│   ├── header.css
+│   ├── nav.css
+│   ├── footer.css
+│   ├── home.css
+│   ├── exhibitions.css
+│   ├── news.css
+│   ├── contact.css
+│   ├── contribution.css
+│   ├── privacy.css
+│   ├── terms.css
+│   └── fonts.css
+│
+├── images/
+│
+└── README.md
+```
 
 ## Getting Started
 
