@@ -1,7 +1,5 @@
 # Community Science Museum - Semester Project 1
 
-![Community Science Museum](<images/FullLogo_NoBuffer%20(4).jpg>)
-
 ![06CD7923-10CA-470A-A306-1EAFB2941A43](https://github.com/user-attachments/assets/6a9b9af1-dcd1-4395-9fa8-7f10c8d2821a)
 
 ## Description
@@ -126,3 +124,9 @@ Christina Anett Osbakk
 - GitHub Copilot for code assistance and ideas
 - Noroff School of Technology and Digital Media
 - Community Science Museum for project inspiration
+
+---
+
+**Student**: Christina Anett Osbakk  
+**Course**: FED1JAN24PT Front end developer
+**Year**: 2024 (Updated 2025).
