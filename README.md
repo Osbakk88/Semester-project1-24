@@ -2,6 +2,9 @@
 
 A website for the Community Science Museum featuring interactive exhibitions, news, and visitor information. Built with semantic HTML and modern CSS practices.
 
+![06CD7923-10CA-470A-A306-1EAFB2941A43](https://github.com/user-attachments/assets/6a9b9af1-dcd1-4395-9fa8-7f10c8d2821a)
+
+
 ## Project Overview
 
 The site provides information about exhibitions, events, visiting hours, and contribution opportunities. Designed to be accessible and engaging for all visitors.
@@ -59,7 +62,7 @@ terms.html, privacy.html
 
 ## Live Site
 
-[Link to deployed site if available]
+https://osbakk88.github.io/Semester-project1-24/index.html
 
 ## Author
 
