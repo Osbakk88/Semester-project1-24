@@ -1,13 +1,26 @@
 # Community Science Museum - Semester Project 1
 
+![Community Science Museum](<images/FullLogo_NoBuffer%20(4).jpg>)
+
 A website for the Community Science Museum featuring interactive exhibitions, news, and visitor information. Built with semantic HTML and modern CSS practices.
+
+# Community Science Museum - Semester Project 1
+
+![Community Science Museum](<images/FullLogo_NoBuffer%20(4).jpg>)
 
 ![06CD7923-10CA-470A-A306-1EAFB2941A43](https://github.com/user-attachments/assets/6a9b9af1-dcd1-4395-9fa8-7f10c8d2821a)
 
-
-## Project Overview
+## Description
 
 The site provides information about exhibitions, events, visiting hours, and contribution opportunities. Designed to be accessible and engaging for all visitors.
+
+This project demonstrates:
+
+- Semantic HTML5 structure
+- Modern CSS design with Grid and Flexbox
+- WCAG 2.1 Level AA accessibility compliance
+- Mobile-first responsive design
+- Clean, modular code organization
 
 ## Key Improvements
 
@@ -36,34 +49,50 @@ A lot of improvements were done to this page as I originally was not satisfied w
 - **Contact**: Improved form design with better focus states
 - **All pages**: Better typography, spacing, and mobile responsiveness
 
-## Technologies
+## Built With
 
-- HTML5 (semantic elements)
-- CSS3 (Grid, Flexbox, Custom Properties)
-- ARIA attributes for accessibility
-- Mobile-first responsive design
-- Copilot for code checking and ideas
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-## File Structure
+## Getting Started
 
-```
-/css - Modular stylesheets
-/images - Site images
-index.html, exhibitionspage.html, news.html,
-contact.html, contributionpage.html,
-terms.html, privacy.html
+### Installing
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/Osbakk88/Semester-project1-24.git
 ```
 
-## Installation & Setup
+2. Navigate to the project directory:
 
-1. Clone the repository
-2. Open `index.html` in a web browser
-3. No build process or dependencies required
+```bash
+cd Semester-project1-24
+```
+
+### Running
+
+To run the project locally:
+
+1. Open `index.html` in your web browser
+2. No build process or dependencies required
+
+## Contributing
+
+This is a student project for Noroff. Feedback and suggestions are welcome via issues or direct contact.
 
 ## Live Site
 
 https://osbakk88.github.io/Semester-project1-24/index.html
 
-## Author
+## Contact
 
-Christina Anett Osbakk. Semester Project 1, Noroff.
+Christina Anett Osbakk
+
+[LinkedIn](https://www.linkedin.com/in/christina-anett-osbakk-90b763180/)
+
+## Acknowledgments
+
+- GitHub Copilot for code assistance and ideas
+- Noroff School of Technology and Digital Media
+- Community Science Museum for project inspiration
