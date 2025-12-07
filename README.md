@@ -14,11 +14,11 @@ This project demonstrates:
 - Mobile-first responsive design
 - Clean, modular code organization
 
-## Key Improvements
+## Key Improvements 1, 2 and 3
 
 A lot of improvements were done to this page as I originally was not satisfied with my work at all. I was not proud of my work and this project really needed some updates.
 
-### Accessibility
+### Accessibility 1
 
 - Fixed HTML validation errors (invalid nesting, proper semantic structure)
 - Added skip navigation and ARIA labels for screen readers
@@ -26,7 +26,7 @@ A lot of improvements were done to this page as I originally was not satisfied w
 - Added meta descriptions for SEO
 - Proper form labels and associations
 
-### Design & Layout
+### Design & Layout 2
 
 - Modern card-based design with shadows and rounded corners
 - Dark theme (#1a1a1a) with light content cards for contrast
@@ -34,7 +34,7 @@ A lot of improvements were done to this page as I originally was not satisfied w
 - Hover effects and smooth transitions
 - Consistent 8rem margins with mobile breakpoints at 768px
 
-### Page Updates
+### Page Updates 3
 
 - **Exhibitions**: Grid layout with image overlays and modern cards
 - **News**: Connected image-text cards with unified styling
@@ -47,6 +47,7 @@ A lot of improvements were done to this page as I originally was not satisfied w
 - **CSS** - For styling (used Flexbox and Grid to make it responsive)
 - **Google Fonts** - For the typography (Klee One, Quattrocento Sans, Fira Sans, Halant)
 - **Git & GitHub** - To save my work and keep track of changes
+- **Co pilot** - For inspiration, ideas, code check 
 
 ## File Structure
 
@@ -92,12 +93,6 @@ Semester-project1-24/
 git clone https://github.com/Osbakk88/Semester-project1-24.git
 ```
 
-2. Navigate to the project directory:
-
-```bash
-cd Semester-project1-24
-```
-
 ### Running
 
 To run the project locally:
@@ -118,6 +113,10 @@ https://osbakk88.github.io/Semester-project1-24/index.html
 Christina Anett Osbakk
 
 [LinkedIn](https://www.linkedin.com/in/christina-anett-osbakk-90b763180/)
+
+## Contributing
+
+This is a student project for Noroff. Feedback and suggestions are welcome.
 
 ## Acknowledgments
 
